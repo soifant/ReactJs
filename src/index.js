@@ -1,5 +1,5 @@
-import React from 'reach';
-import ReachDOM from 'react-dom/client';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 const myFirstElement = <h1>Hallo word</h1>
 
