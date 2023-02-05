@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const myFirstElement = <h1>Hallo word</h1>
+const view = <h1>Soifant</h1>
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(myFirstElement);
+ReactDOM.render(view, document.getElementById('root'));
