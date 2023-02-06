@@ -1,16 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-function Code(props){
+function Lang(props){
+	return <h3> Languange {props.lang}</h3>;
+}
+
+function Code(){
+	const lang = ['javascript', 'php', 'nodrjs'];
 	
-	if(props.lang){
-	
-		return <h1> Your code is javacrpit</h1>;
-	
-	}
-	
-	return <h1> Your code not js</h1>;
+	return (
+		<>
+			<h1> You can computer languange</h1>
+			<ul>
+				{lang.map((lang) => <Lang lang={lang}/>)}
+			</ul>
+		</>
+	)
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Code lang='true'/>);
+root.render(<Code />);
