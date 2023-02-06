@@ -6,12 +6,12 @@ function Lang(props){
 }
 
 function Code(){
-	return {
+	return (
 	<>
 		<h1> What your favorite code</h1>
 		<Lang />
 	</>
-	}
+	)
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
