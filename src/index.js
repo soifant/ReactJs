@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-function Code(){
+function Code(props){
 	
-	const shoot = (a) => {
-		alert(a);
+	if(props.lang){
+	
+		return <h1> Your code is javacrpit</h1>;
+	
 	}
 	
-	return (
-		<button onClick = {() => shoot("Your code write wwith javascript")} > Take shoot </button>
-	);
+	return <h1> Your code not js</h1>;
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Code />);
+root.render(<Code lang='true'/>);
