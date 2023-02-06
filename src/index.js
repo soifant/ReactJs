@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 function Form(){
 
-	conat [name, setName] = useState("");
+	const [name, setName] = useState("");
 	
 	const handleSubmit = (event) => {
 		event.preventDefault();
