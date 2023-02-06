@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM frok 'react-dom/client';
+import ReactDOM from 'react-dom/client';
 
 const x = 5;
 const element = (
