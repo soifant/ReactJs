@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const view = <h1> ini tampilan home</h1>;
+const element = <h1> ini tampilan home</h1>;
 
-ReactDOM.render(view, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(element);
