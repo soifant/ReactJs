@@ -11,7 +11,7 @@ function Form(){
 	}
 	
 	return(
-		<form>
+		<form onSubmit={handleSubmit}>
 			<label> Enter your name here
 				<input type='text'
 				value = {name}
