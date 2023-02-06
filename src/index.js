@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+<<<<<<< HEAD
 const myelement = (
   <table>
     <tr>
@@ -16,3 +17,9 @@ const myelement = (
 );
 
 ReactDOM.render(myelement, document.getElementById('root'));
+=======
+const element = <h1> ini tampilan home</h1>;
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(element);
+>>>>>>> origin/master
