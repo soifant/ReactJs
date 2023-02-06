@@ -1,28 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-function Lang(props){
-	return <h3> Languange {props.lang} and framework {props.fm}</h3>;
-}
+function Form(){
 
-function Code(){
-	const lang = [
-	
-		{lang : 'javascript', fm : 'ReactJs'}, 
-		{lang : 'php', fm : 'Laravel'}, 
-		{lang : 'python', fm : 'Django'}
-		
-	];
-	
-	return (
-		<>
-			<h1> You write code with</h1>
-			<ul>
-				{lang.map((lang) => <Lang lang={lang.lang} fm={lang.fm}/>)}
-			</ul>
-		</>
-	)
+	return(
+		<form>
+			<label> Enter your name here
+				<input type='text'/>
+			</label>
+		</form>
+	);
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Code />);
+root.render(<Form />);
