@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 
 function Code(){
 	
-	const shoot = () => {
-		alert('YOUR CODE IS JAVASCRPIT');
+	const shoot = (a) => {
+		alert(a);
 	}
 	
 	return (
-		<button onClick = {shoot} > Take shoot </button>
+		<button onClick = {() => shoot("Your code write wwith javascript")} > Take shoot </button>
 	);
 }
 
