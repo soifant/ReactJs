@@ -1,14 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM frok 'react-dom/client';
 
+const x = 5;
 const element = (
-	<div>
-		<h1>Ini adalah angka 1</h1>
-		<br/>
-		<h1>ini adalah perkalian {10 * 20} </h1>
-		<br/>
-		<small> Anda sudah menlihat keduanya</small>
-	</div>
+<>
+	<h2> Selamat datang </h2>
+	<br/>
+	<h1>Ini perkalian {x} x {x} = {x*x}</h1>
+	<br/>
+	<small> 
+	Hasil perkalian 
+	{(x) < 5 ? "lebih kecil" : "lebih besar"}
+	{x}
+	</small>
+</>
+
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
