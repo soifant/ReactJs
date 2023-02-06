@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-function Lang(){
-	return <h2> This a javascript language</h2>;
+function Lang(props){
+	return <h2> This a {props.lang} language</h2>;
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Lang />);
+root.render(<Lang lang="nodeJs"/>);
