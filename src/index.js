@@ -9,7 +9,7 @@ function Code(){
 	return (
 	<>
 		<h1> What your favorite code</h1>
-		<Lang />
+		<Lang lang="JavaScript"/>
 	</>
 	)
 }
