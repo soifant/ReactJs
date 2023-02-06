@@ -18,7 +18,7 @@ function Code(){
 		<>
 			<h1> You write code with</h1>
 			<ul>
-				{lang.map((lang) => <Lang lang={lang.lang} Fm={lang.fm}/>)}
+				{lang.map((lang) => <Lang lang={lang.lang} fm={lang.fm}/>)}
 			</ul>
 		</>
 	)
